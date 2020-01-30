@@ -1,16 +1,16 @@
 body { 
 background: linear-gradient: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,106,121,1) 82%, 
-rgba(0,212,255,1) 100%);
+background-image: url(logo2.jpg);
+background-size: 25%;
 
-color:white;
 font-family: Segoe UI, helvetica;
 font-size: 20px;
 
  }
 
 h1, p, a{
-    font-size: 1.5em;
+    font-size: 1.7em;
+    
 }
 
 a {
@@ -29,8 +29,14 @@ img{
 #container{
 	max-width: 600px;
 	margin: 0 auto;
-}
-
 link{
 	list-style: none;
 }
+
+h2 {
+	font-size: 1em;
+	color: white;
+    
+}
+
+
