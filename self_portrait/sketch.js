@@ -18,6 +18,7 @@ rect(400, 200, 100, 100);
 //hair
 fill('black')
 ellipse(450, 75, 125, 100);
+
 //face
 fill('orange');
 ellipse(450, 150, 150, 175);
@@ -42,11 +43,4 @@ fill('red');
 strokeWeight(3);
 arc(450, 195, 50, 30, 190, 190);
  
-
-
-
-
-
-
-
 }
