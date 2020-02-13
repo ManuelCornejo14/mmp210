@@ -19,6 +19,7 @@ function setup(){
 function draw(){
 	//draw scope
     background('lightblue');
+
 //neck
 
 fill('lightpink');
@@ -26,7 +27,7 @@ rect(x-50, 200, 100, 100);
 
 
 //hair
-fill('black')
+fill('black');
 ellipse(x, 75, 125, 100);
 //face
 fill('orange');
@@ -38,6 +39,7 @@ s++
 //eyes
 
 fill('white');
+
 //right eye
 ellipse(x+35, 130, 35, 35);
 //lefteye
