@@ -9,7 +9,7 @@ var y = 150;
 
 //size variable
 var s = 100;
-
+var w = 75;
 function setup(){
 	//setup scope
     createCanvas(900, 310);
@@ -41,9 +41,11 @@ s++
 fill('white');
 
 //right eye
-ellipse(x+35, 130, 35, 35);
+ellipse(x+35, 130, w+30, s+35);
+s++
+w++
 //lefteye
-ellipse(x-35, 130, 35, 35);   
+ellipse(x-35, 130, w+35, 35);   
 
 //pupils
 fill('black');
