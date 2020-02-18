@@ -5,30 +5,33 @@
     2/18/2020
 */
 
-var x = 450; // origin for face
+var x; // 450; // origin for face
 var y = 150;
 
 //size variable
 var s = 100;
-var w = 75;
+
 function setup(){
 	//setup scope
     createCanvas(900, 310);
+    x= width/2;
+
     
 }
 
 function draw(){
 	//draw scope
     background('lightblue');
-x= mouseX;
-y= mouseY;
+
 
 //neck
 
 fill('lightpink');
 rect(x-50, 200, 100, 100);
 
-
+x= mouseX;
+y= mouseY;
+ellipse(x, y, s);
 //hair
 fill('black');
 ellipse(x, 75, 125, 100);
@@ -47,12 +50,12 @@ ellipse(x, y, s+50, 175);
 fill('white');
 
 //right eye
-ellipse(x+35, 130, w+30, s+35);
+ellipse(x+35, 130, 30, 35);
 //s++
 //w++
 
 //lefteye
-ellipse(x-35, 130, w+35, 35);   
+ellipse(x-35, 130, 35, 35);   
 
 //pupils
 fill('black');
