@@ -1,0 +1,36 @@
+body { 
+background: green;
+background-size: 25%;
+color:black;
+font-family: Segoe UI, helvetica;
+font-size: 20px;
+
+ }
+
+h1, p, a{
+    font-size: 1.7em;
+    
+}
+
+a {
+	color: black;
+	transition: color 300ms ease-in;
+}
+
+a:hover {
+	color : #457909;
+}
+
+img{
+	max-width: 100%;
+}
+
+#container{
+	max-width: 600px;
+	margin: 0 auto;
+link{
+	list-style: none;
+}
+
+
+
