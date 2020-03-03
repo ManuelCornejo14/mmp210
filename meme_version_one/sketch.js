@@ -33,8 +33,8 @@ textStyle(NORMAL);
 textFont('Orbitron');
 textAlign(LEFT, TOP);
 
-var hello = "Hello World";
-var length = hello.lenght;
+var hello = "Nooooooooo";
+var length = noooo whyyyy.lenght;
 var n = map(mouseX, 0, 100, 0, 20);
 
 var displayString = hello.substring(0, n);
@@ -48,7 +48,7 @@ textStyle(NORMAL);
 textAlign(CENTER, TOP);
 
 
-var welcome = "Welcome to my website";
+var welcome = "when you're typing a code and can't figure whats wrong woth it";
 var end= map(frameCount, 0, 200, 0, welcome.length);
 text (welcome.substring (0, end), 250, 350);
 }
