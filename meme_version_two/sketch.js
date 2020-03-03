@@ -1,13 +1,13 @@
-/* meme  version one
+/* meme  version two
 02/25/2020
 */
 
 
 //global scope
-var angryImage;
+var catImage;
 
 function preload(){
-	angryImage = loadImage("angry.png");
+	catImage = loadImage("cat.jpg");
 }
 
 function setup () {
@@ -21,9 +21,9 @@ function draw () {
 
 //draw image
 tint(225, 0, 255);
-image(angryImage, 100, 100, 300, 300);
+image(catImage, 100, 100, 300, 300);
 tint(0, 255, 255, 127);
-image(angryImage, 0, 0, mouseX, mouseY);
+image(catImage, 0, 0, mouseX, mouseY);
 
 textSize(75);
 fill("blue");
@@ -33,7 +33,7 @@ textStyle(NORMAL);
 textFont('Orbitron');
 textAlign(LEFT, TOP);
 
-var hello = "Nooooooooo";
+var hello = "DontTouchMyFoooooood";
 var length = hello.lenght;
 var n = map(mouseX, 0, 100, 0, 20);
 
@@ -48,8 +48,7 @@ textStyle(NORMAL);
 textAlign(CENTER, TOP);
 
 
-var welcome = "when you're typing a code and can't figure whats wrong with it";
-var end= map(frameCount, 0, 200, 0, welcome.length);
+var welcome = "ahhhhhhhh";
 text (welcome.substring (0, end), 250, 350);
 }
 
