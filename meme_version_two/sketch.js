@@ -5,50 +5,77 @@
 
 //global scope
 var catImage;
+var DogImage;
+var ChihuahuaImage;
+var bearImage;
+
+var counter = 0;
+var instructions = "click here";
+var x;
+var y;
+
 
 function preload(){
-	catImage = loadImage("cat.jpg");
+	cat= loadImage("cat.jpg");
+	 dog= loadImage("dog.jpg");
+	 chihuahua= loadImage("chihuahua.jpg");
+	 bear= loadImage("bear.jpg")
 }
 
 function setup () {
-var canvas= createCanvas(500, 500);
-canvas.drawingContext.miterLimit = 1;
+var canvas= createCanvas(700, 700);
+canvas.drawingContext.miterLimit = 4;
+
+    x = width - 50;
+    y = 20;
 
 }
 
-function draw () {
-     background('grey');
+function mousePressed() {
+	counter++;
+	if (counter == 3) {
+		counter = 0;
+	}
 
-//draw image
-tint(225, 0, 255);
-image(catImage, 100, 100, 300, 300);
-tint(0, 255, 255, 127);
-image(catImage, 0, 0, mouseX, mouseY);
-
-textSize(75);
-fill("blue");
-stroke("plum");
-strokeWeight(5);
-textStyle(NORMAL);
-textFont('Orbitron');
-textAlign(LEFT, TOP);
-
-var hello = "DontTouchMyFoooooood";
-var length = hello.lenght;
-var n = map(mouseX, 0, 100, 0, 20);
-
-var displayString = hello.substring(0, n);
-text(displayString, 15, height/2);
-var s= mouseX;
-
-
-textSize(20);
-strokeWeight(5);
-textStyle(NORMAL);
-textAlign(CENTER, TOP);
-
-
-var welcome = "ahhhhhhhh";
-text (welcome.substring (0, end), 250, 350);
+	if (mouseX > width/2 && mouseY > height/2) {
+		// bottom right
+		instructions = 'now click here';
+		y = 50;
+	} else if (mouseX > width/2 && mouseY < height/2) {
+		instructions = 'now im over here';
+		x = 50;
+	} else if (mouseX < width/2 && mouseY < height/2) {
+		instructions = 'now im down here';
+		y = height - 100;
+	}
 }
 
+function draw() {
+	background('gray');
+
+	// draw the image
+	if (counter == 0) {
+		image(catImage, 0, 0, width, height);
+	} else if (counter == 1) {
+		image(dogImage, 0, 0, width, height);
+	} else if (counter == 1) {
+		image(chihuahuaImage, 0, 0, width, height);
+	} else {
+	    image(bearImage, 0, 0, width, height); 
+	
+	}
+	
+
+
+    textAlign(CENTER, CENTER);
+    textSize(40);
+    textFont("Orbitron");
+    fill("green");
+    stroke("white");
+    strokeWeight(8);
+    
+    text(instructions, x, y, 150);
+
+}
+    
+   
