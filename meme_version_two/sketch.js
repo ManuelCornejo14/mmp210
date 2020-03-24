@@ -7,7 +7,7 @@
 var catImage;
 var DogImage;
 var ChihuahuaImage;
-var bearImage;
+
 
 var counter = 0;
 var instructions = "click here";
@@ -19,15 +19,15 @@ function preload(){
 	cat= loadImage("cat.jpg");
 	 dog= loadImage("dog.jpg");
 	 chihuahua= loadImage("chihuahua.jpg");
-	 bear= loadImage("bear.jpg")
+	 
 }
 
 function setup () {
 var canvas= createCanvas(700, 700);
 canvas.drawingContext.miterLimit = 4;
 
-    x = width - 50;
-    y = 20;
+    x = width - 150;
+    y = height - 100;
 
 }
 
@@ -58,12 +58,9 @@ function draw() {
 		image(catImage, 0, 0, width, height);
 	} else if (counter == 1) {
 		image(dogImage, 0, 0, width, height);
-	} else if (counter == 1) {
-		image(chihuahuaImage, 0, 0, width, height);
 	} else {
-	    image(bearImage, 0, 0, width, height); 
-	
-	}
+		image(chihuahuaImage, 0, 0, width, height);
+	} 
 	
 
 
